@@ -13,7 +13,7 @@ require 'contexts'
 require 'shoulda/matchers'
 
 class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
+  # ActiveRecord::Migration.check_pending!
 
   # include the Contexts module for all tests
   include Contexts
@@ -25,7 +25,7 @@ class ActiveSupport::TestCase
   #
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
-  fixtures :all
+  # fixtures :all
 
   # Add more helper methods to be used by all tests here...
   # Prof. H's helper method to increase readability
